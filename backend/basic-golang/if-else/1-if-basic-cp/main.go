@@ -37,4 +37,22 @@ func main() {
 		Indra Kenz   Tidak Lulus
 	*/
 	// TODO: answer here
+	for _, mahasiswa := range mahasiswa {
+		// if mahasiswa["nilai"] == "A" {
+		// 	fmt.Printf("%s   Cumlaude\n", mahasiswa["name"])
+		// } else if mahasiswa["nilai"] == "B" {
+		// 	fmt.Printf("%s   Lulus\n", mahasiswa["name"])
+		// } else {
+		// 	fmt.Printf("%s   Tidak Lulus\n", mahasiswa["name"])
+		// }
+
+		switch mahasiswa["nilai"] {
+		case "A":
+			fmt.Printf("%s   Cumlaude\n", mahasiswa["name"])
+		case "B":
+			fmt.Printf("%s   Lulus\n", mahasiswa["name"])
+		case "X":
+			fmt.Printf("%s   Tidak Lulus\n", mahasiswa["name"])
+		}
+	}
 }
